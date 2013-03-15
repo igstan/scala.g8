@@ -13,5 +13,5 @@ javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 net.virtualvoid.sbt.graph.Plugin.graphSettings
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "1.8" % "test"
+  "org.scalatest" %% "scalatest" % "1.9.1" % "test"
 )

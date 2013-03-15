@@ -6,7 +6,7 @@ version := "$version$"
 
 scalaVersion := "$scala$"
 
-scalacOptions ++= Seq("-unchecked", "-deprecation", "-Ydependent-method-types")
+scalacOptions ++= Seq("-feature", "-deprecation", "-unchecked")
 
 javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 

@@ -1,9 +1,9 @@
-package $organization$.$name;format="Camel"$
+package $organization$.$name;format="camel"$
 
 import scala.language.experimental.macros
 import scala.reflect.macros.Context
 
-package object macros {
+package object Macros {
   /**
    * An identity macros which spits out what it receives.
    *

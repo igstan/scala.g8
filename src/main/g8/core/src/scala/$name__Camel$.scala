@@ -1,4 +1,4 @@
-package $organization$.$name;format="Camel"$
+package $organization$.$name;format="camel"$
 package core
 
 object $name;format="Camel"$ {

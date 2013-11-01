@@ -1,7 +1,10 @@
 package $organization$.$name;format="Camel"$
+package core
 
 object $name;format="Camel"$ {
   def main(args: Array[String]): Unit = {
-    println("Hello, World!")
+    macros.id {
+      println("Hello, World!")
+    }
   }
 }

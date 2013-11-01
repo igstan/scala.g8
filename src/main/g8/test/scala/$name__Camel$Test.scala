@@ -1,6 +1,6 @@
-package $organization$.$name;format="Camel"$
+package $organization$.$name;format="camel"$
 
-class $name;format="Camel"$ extends FunSuite with ShouldMatchers {
+class $name;format="Camel"$Test extends FunSuite with ShouldMatchers {
   test("tests setup") {
     true should be(true)
   }

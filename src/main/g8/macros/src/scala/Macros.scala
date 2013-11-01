@@ -1,4 +1,5 @@
 package $organization$.$name;format="camel"$
+package macros
 
 import scala.language.experimental.macros
 import scala.reflect.macros.Context

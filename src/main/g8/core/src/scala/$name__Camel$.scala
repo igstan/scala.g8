@@ -3,7 +3,7 @@ package core
 
 object $name;format="Camel"$ {
   def main(args: Array[String]): Unit = {
-    macros.id {
+    macros.Macros.id {
       println("Hello, World!")
     }
   }

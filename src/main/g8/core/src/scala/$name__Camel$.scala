@@ -1,9 +1,9 @@
 package $organization$.$name;format="camel"$
 package core
 
-object $name;format="Camel"$ {
+object $name;format="Camel"$Core {
   def main(args: Array[String]): Unit = {
-    macros.Macros.id {
+    macros.id {
       println("Hello, World!")
     }
   }

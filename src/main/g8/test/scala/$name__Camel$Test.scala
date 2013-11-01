@@ -1,7 +1,7 @@
-package $organization$.$name$
+package $organization$.$name;format="Camel"$
 
-class $name;format="Camel"$ extends FunSuite with MustMatchers {
-  test("something") {
-    true must be(true)
+class $name;format="Camel"$ extends FunSuite with ShouldMatchers {
+  test("tests setup") {
+    true should be(true)
   }
 }

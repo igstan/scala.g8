@@ -1,6 +1,6 @@
 package $organization$
 
-package object $name$ {
-  type FunSuite     = org.scalatest.FunSuite
-  type MustMatchers = org.scalatest.matchers.MustMatchers
+package object $name;format="Camel"$ {
+  type FunSuite       = org.scalatest.FunSuite
+  type ShouldMatchers = org.scalatest.matchers.ShouldMatchers
 }

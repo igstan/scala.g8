@@ -12,7 +12,7 @@ object build extends Build {
       version                     := "$version$",
       scalaVersion                := "$scala$",
       crossPaths                  := false,
-      scalacOptions              ++= Seq("-feature", "-unchecked", "-deprecation"),
+      scalacOptions              ++= Seq("-feature", "-unchecked", "-deprecation", "-Yno-adapted-args"),
       javacOptions               ++= Seq("-Xlint:unchecked", "-Xlint:deprecation"),
       sourceDirectory in Compile <<= baseDirectory(_ / "src"),
       sourceDirectory in Test    <<= baseDirectory(_ / "test"),

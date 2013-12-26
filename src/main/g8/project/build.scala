@@ -7,13 +7,13 @@ object build extends Build {
     id = "$name$",
     base = file("."),
     settings = Defaults.defaultSettings ++ graphSettings ++ Seq(
-      name                 := "$name$",
-      organization         := "$organization$",
-      version              := "$version$",
-      scalaVersion         := "$scala$",
-      crossPaths           := false,
-      javacOptions        ++= Seq("-Xlint:unchecked", "-Xlint:deprecation"),
-      scalacOptions       ++= Seq(
+      name := "$name$",
+      organization := "$organization$",
+      version := "$version$",
+      scalaVersion := "$scala$",
+      crossPaths := false,
+      javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation"),
+      scalacOptions ++= Seq(
         "-feature",
         "-unchecked",
         "-deprecation",

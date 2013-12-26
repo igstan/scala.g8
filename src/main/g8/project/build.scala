@@ -22,7 +22,13 @@ object build extends Build {
         "-language:higherKinds"
       ),
       libraryDependencies ++= Seq(
-        "org.scalatest"  %% "scalatest" % "1.9.2" % "test"
+        "org.slf4j"       % "slf4j-api"        % "1.7.5",
+        "org.slf4j"       % "jcl-over-slf4j"   % "1.7.5"  % "test",
+        "org.slf4j"       % "jul-to-slf4j"     % "1.7.5"  % "test",
+        "org.slf4j"       % "log4j-over-slf4j" % "1.7.5"  % "test",
+        "ch.qos.logback"  % "logback-classic"  % "1.0.13" % "test",
+        "ch.qos.logback"  % "logback-core"     % "1.0.13" % "test",
+        "org.scalatest"  %% "scalatest"        % "1.9.2"  % "test"
       )
     )
   )

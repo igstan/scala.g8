@@ -8,7 +8,7 @@ $ g8 igstan/scala
 version [0.1.0]:
 organization [ro.igstan]:
 scala [2.10.3]:
-name []: example
+name [quux]: example
 
 Template applied in ./example
 
@@ -17,16 +17,22 @@ $ tree -I target
 .
 ├── project
 │   ├── build.properties
+│   ├── build.scala
 │   └── plugins.sbt
-│   └── build.scala
-├── src
-│   └── scala
-│       └── Example.scala
-└── test
-    └── scala
-        └── ExampleTest.scala
+├── readme.md
+└── src
+    ├── main
+    │   └── scala
+    │       └── Example.scala
+    └── test
+        ├── resources
+        │   └── logback-test.xml
+        └── scala
+            ├── ExampleTest.scala
+            ├── logback.scala
+            └── package.scala
 
-5 directories, 5 files
+7 directories, 9 files
 ```
 
 ### Macros Teamplate

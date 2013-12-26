@@ -7,17 +7,15 @@ object build extends Build {
     id = "$name$",
     base = file("."),
     settings = Defaults.defaultSettings ++ graphSettings ++ Seq(
-      name                        := "$name$",
-      organization                := "$organization$",
-      version                     := "$version$",
-      scalaVersion                := "$scala$",
-      crossPaths                  := false,
-      scalacOptions              ++= Seq("-feature", "-unchecked", "-deprecation", "-Yno-adapted-args"),
-      javacOptions               ++= Seq("-Xlint:unchecked", "-Xlint:deprecation"),
-      sourceDirectory in Compile <<= baseDirectory(_ / "src"),
-      sourceDirectory in Test    <<= baseDirectory(_ / "test"),
-      libraryDependencies        ++= Seq(
-        "org.scalatest" %% "scalatest" % "1.9.2" % "test"
+      name                 := "$name$",
+      organization         := "$organization$",
+      version              := "$version$",
+      scalaVersion         := "$scala$",
+      crossPaths           := false,
+      scalacOptions       ++= Seq("-feature", "-unchecked", "-deprecation", "-Yno-adapted-args"),
+      javacOptions        ++= Seq("-Xlint:unchecked", "-Xlint:deprecation"),
+      libraryDependencies ++= Seq(
+        "org.scalatest"  %% "scalatest" % "1.9.2" % "test"
       )
     )
   )

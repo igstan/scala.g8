@@ -12,8 +12,15 @@ object build extends Build {
       version              := "$version$",
       scalaVersion         := "$scala$",
       crossPaths           := false,
-      scalacOptions       ++= Seq("-feature", "-unchecked", "-deprecation", "-Yno-adapted-args"),
       javacOptions        ++= Seq("-Xlint:unchecked", "-Xlint:deprecation"),
+      scalacOptions       ++= Seq(
+        "-feature",
+        "-unchecked",
+        "-deprecation",
+        "-Yno-adapted-args",
+        "-language:implicitConversions",
+        "-language:higherKinds"
+      ),
       libraryDependencies ++= Seq(
         "org.scalatest"  %% "scalatest" % "1.9.2" % "test"
       )

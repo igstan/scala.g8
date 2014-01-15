@@ -2,7 +2,7 @@ import sbt._, Keys._
 
 import net.virtualvoid.sbt.graph.Plugin.graphSettings
 
-object build extends Build {
+object Build extends Build {
   val root = Project(
     id = "$name$",
     base = file("."),

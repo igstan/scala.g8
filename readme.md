@@ -7,7 +7,7 @@ In its basic usage, the template will create the following project structure:
 $ g8 igstan/scala
 version [0.1.0]:
 organization [ro.igstan]:
-scala [2.10.3]:
+scala [2.11.0]:
 name [quux]: example
 
 Template applied in ./example

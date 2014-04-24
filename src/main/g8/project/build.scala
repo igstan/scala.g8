@@ -28,7 +28,7 @@ object Build extends Build {
         "org.slf4j"       % "log4j-over-slf4j" % "1.7.5"  % "test",
         "ch.qos.logback"  % "logback-classic"  % "1.0.13" % "test",
         "ch.qos.logback"  % "logback-core"     % "1.0.13" % "test",
-        "org.scalatest"  %% "scalatest"        % "2.0"    % "test"
+        "org.scalatest"  %% "scalatest"        % "2.1.3"  % "test"
       )
     )
   )

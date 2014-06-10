@@ -30,6 +30,15 @@ object Build extends Build {
         "ch.qos.logback"  % "logback-classic"  % "1.1.2" % "test",
         "ch.qos.logback"  % "logback-core"     % "1.1.2" % "test",
         "org.scalatest"  %% "scalatest"        % "2.1.7" % "test"
+      ),
+      testOptions ++= Seq(
+        // Avoid "substitute logger" warning from SLF4J when running tests in
+        // parallel. See also: stackoverflow.com/questions/7898273#12095245.
+        Tests.Setup { cl =>
+          cl.loadClass("org.slf4j.LoggerFactory")
+            .getMethod("getLogger", cl.loadClass("java.lang.String"))
+            .invoke(null, "ROOT")
+        }
       )
     )
   )

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="true" scanPeriod="60 seconds">
-  <conversionRule conversionWord="highlight" converterClass="$organization$.test.$name;format="camel"$.LogLevelHighlighting"/>
+  <conversionRule conversionWord="highlight" converterClass="$organization$.$name;format="camel"$.test.LogbackColorist"/>
 
   <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
     <resetJUL>true</resetJUL>

@@ -1,12 +1,12 @@
-package $organization$.test
-package $name;format="camel"$
+package $organization$.$name;format="camel"$
+package test
 
 import ch.qos.logback.classic.Level
 import ch.qos.logback.classic.spi.ILoggingEvent
 import ch.qos.logback.core.pattern.color.ANSIConstants._
 import ch.qos.logback.core.pattern.color.ForegroundCompositeConverterBase
 
-class LogLevelHighlighting extends ForegroundCompositeConverterBase[ILoggingEvent] {
+class LogbackColorist extends ForegroundCompositeConverterBase[ILoggingEvent] {
   override def getForegroundColorCode(event: ILoggingEvent): String = {
     (event.getLevel.toInt: @annotation.switch) match {
       case Level.ERROR_INT => RED_FG

@@ -33,7 +33,7 @@ libraryDependencies ++= Seq(
   "org.slf4j"       % "log4j-over-slf4j" % "1.7.10" % "test",
   "ch.qos.logback"  % "logback-classic"  % "1.1.2"  % "test",
   "ch.qos.logback"  % "logback-core"     % "1.1.2"  % "test",
-  "org.scalatest"  %% "scalatest"        % "2.2.3"  % "test"
+  "org.scalatest"  %% "scalatest"        % "2.2.4"  % "test"
 )
 
 testOptions ++= Seq(
